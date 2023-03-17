@@ -70,25 +70,26 @@ The command is set to run when the container starts by CMD ["./api"].
 
 volumes at the end of the file is the list of volumes we want to create. In this case, we are creating a volume called pgdata. The format is volume_name: {}
 
-**BUILD and Run
+**BUILD and Run**
 
 dockerFile and .yaml Created Now
 
 **Run the postgres container
 
-**docker compose up -d go_db
-**docker ps -a    // to see all containers
+**docker compose up -d go_db**
+**docker ps -a    // to see all containers**
 
 CONTAINER ID   IMAGE                       COMMAND                  CREATED          STATUS                      PORTS                                       NAMES
 a9e023da5412   postgres:12                 "docker-entrypoint.s…"   45 seconds ago   Up 34 seconds               0.0.0.0:5432->5432/tcp, :::5432->5432/tcp   go_db
 
-connect to db localhost:5432
+connect to db localhost:5432 now
 
 **BUILD and RUN**
 
 // BUILD the go-app image, with the name defined in the "image" value
-**docker compose build  
-**docker images
+
+**docker compose build**  
+**docker images**
 
 REPOSITORY                   TAG       IMAGE ID       CREATED          SIZE
 avgsoccers/go-app            1.0.0     2a15ca7c298d   23 seconds ago   312MB
@@ -96,5 +97,6 @@ avgsoccers/go-app            1.0.0     2a15ca7c298d   23 seconds ago   312MB
 **RUNNING the service**
 
 // run a container based on the image we just built.
-**docker compose up go-app
+
+**docker compose up go-app**
 
