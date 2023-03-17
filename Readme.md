@@ -1,7 +1,7 @@
  **Biodata user Rest API in Go using Mux, Postgres Docker and Docker Compose**
 
  **importing** 
- database/sql   >   As a connector to the Postgres db 
+ database/sql   >   As a connector to the Postgres db /n
  encoding/json  >   work with objects in json format 
  log to         >   To log errors 
  net/http       >   It will handle http requests 
