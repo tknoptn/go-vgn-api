@@ -77,9 +77,11 @@ dockerFile and .yaml Created Now
 **Run the postgres container
 
 **docker compose up -d go_db**
+
 **docker ps -a    // to see all containers**
 
 CONTAINER ID   IMAGE                       COMMAND                  CREATED          STATUS                      PORTS                                       NAMES
+
 a9e023da5412   postgres:12                 "docker-entrypoint.s…"   45 seconds ago   Up 34 seconds               0.0.0.0:5432->5432/tcp, :::5432->5432/tcp   go_db
 
 connect to db localhost:5432 now
