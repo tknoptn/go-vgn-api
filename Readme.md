@@ -70,11 +70,10 @@ The command is set to run when the container starts by CMD ["./api"].
 
 volumes at the end of the file is the list of volumes we want to create. In this case, we are creating a volume called pgdata. The format is volume_name: {}
 
-**BUILD and Run**
 
-dockerFile and .yaml Created Now
+As dockerFile and .yaml Created Now
 
-**Run the postgres container
+**Run the postgres container**
 
 **docker compose up -d go_db**
 
