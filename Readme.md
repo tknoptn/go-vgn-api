@@ -1,6 +1,6 @@
- **biodata user Rest API in Go using Mux, Postgres Docker and Docker Compose
+ **biodata user Rest API in Go using Mux, Postgres Docker and Docker Compose**
 
- **importing: 
+ **importing** 
  database/sql   >   As a connector to the Postgres db 
  encoding/json  >   work with objects in json format 
  log to         >   To log errors 
@@ -9,9 +9,9 @@
 
 The struct defined is for an User with an Id (autoincremented by the db), a name and an email.
  
-**The  application is dockerized to run
+**The  application is dockerized to run**
 
-**What actions it will perform :
+**What actions it will perform** :
 
 > We set an environment variable before connecting to the Postgres database.
 
@@ -26,9 +26,9 @@ The struct defined is for an User with an Id (autoincremented by the db), a name
    
 > 5 controller to Creat, Read, Update and Delete users
 
-**dOCKERIZE the App
+**DOCKERIZE the App**
 
-*****create DockerFile**** :
+**create DockerFile** :
 
 FROM sets the base image to use. In this case we are using the golang:1.16.3-alpine3.13 image, a lightweight version
 
@@ -44,7 +44,7 @@ EXPOSE 8000 makes port 8000 accessible.
 
 The command is set to run when the container starts by CMD ["./api"].
 
-***Docker COMPOSE yaml file***
+**Docker COMPOSE yaml file**
 
  we have defined 2 services, go-app and go_db  -->  go-app is the Go application we just Dockerized writing the Dockerfile , go_db is a Postgres container, to store the data. We will use the official Postgres image
 
@@ -69,7 +69,7 @@ The command is set to run when the container starts by CMD ["./api"].
 
 volumes at the end of the file is the list of volumes we want to create. In this case, we are creating a volume called pgdata. The format is volume_name: {}
 
-****BUILD and Run ***
+**BUILD and Run
 
 dockerFile and .yaml Created Now
 
@@ -92,7 +92,7 @@ connect to db localhost:5432
 REPOSITORY                   TAG       IMAGE ID       CREATED          SIZE
 avgsoccers/go-app            1.0.0     2a15ca7c298d   23 seconds ago   312MB
 
-**RUNNING the service
+**RUNNING the service**
 
 // run a container based on the image we just built.
 **docker compose up go-app
